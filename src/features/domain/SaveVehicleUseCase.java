@@ -1,16 +1,16 @@
 package features.domain;
 
-import features.presentation.VehicleView;
+import features.data.Vehicle;
 
 public class SaveVehicleUseCase {
 
-    private VehicleRepository vehicleRepository;
+    private static VehicleRepository vehicleRepository;
 
     public SaveVehicleUseCase(VehicleRepository vehicleRepository) {
         this.vehicleRepository = vehicleRepository;
     }
 
-    public static void execute(Vehicle vehicle) {
-        SaveVehicleUseCase.execute(vehicle);
+    public void execute(Vehicle vehicle) {
+        vehicleRepository.saveVehicleUseCase(vehicle);
     }
 }

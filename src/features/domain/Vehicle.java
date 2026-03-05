@@ -2,13 +2,13 @@ package features.domain;
 
 public class Vehicle {
 
-    private int id;
+    private String id;
     private String marca;
     private String model;
     private int capacity;
     private String type;
 
-    public Vehicle(int id, String model, String marca, int capacity, String type) {
+    public Vehicle(String id, String model, String marca, int capacity, String type) {
         this.id = id;
         this.model = model;
         this.marca = marca;
@@ -16,7 +16,7 @@ public class Vehicle {
         this.type = type;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
