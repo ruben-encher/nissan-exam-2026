@@ -1,6 +1,8 @@
 package features.data;
 
-public class Vehicle {
+import features.domain.VehicleRepository;
+
+public class Vehicle implements VehicleRepository {
     private String id;
 
     public String getId() {
