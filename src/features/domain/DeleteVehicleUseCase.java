@@ -2,13 +2,13 @@ package features.domain;
 
 public class DeleteVehicleUseCase {
 
-    private VehicleRepository vehicleRepository;
+    private static VehicleRepository vehicleRepository;
 
     public DeleteVehicleUseCase(VehicleRepository vehicleRepository) {
         this.vehicleRepository = vehicleRepository;
     }
 
-    public static void execute(int id) {
-        DeleteVehicleUseCase.execute(id);
+    public void execute(String id) {
+        vehicleRepository.deleteVehicleUseCase(id);
     }
 }
